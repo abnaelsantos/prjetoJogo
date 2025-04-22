@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(imagemFundo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.interface .nomeJogo h1{
+    
+    font-size: 5vw;
+    color:#E02F5E;
+    font-weight: 600;
+    animation: blink 1.5s infinite;
+    text-shadow: 3px 3px 5px rgba(148, 146, 146, 0.7);
+    
+}
+
+.interface .nomeJogo h1 span {
+    font-weight: 800;
+}
+
+/* animação nome jogo */
+ 
+ @keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/* /animação nome jogo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo img {
+    width: 400px;
+    margin-top: 5vw;
+}
+
+.interface .botaoStart {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.interface .botaoStart button {
+    height: 4vw;
+    width: 9vw;
+    font-size: 2vw;
+    background-color: #1F2463;
+    border-radius: 8px;
+    transition: .5s;
+    border: none;
+    
+}
+
+.interface .botaoStart button a {
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.interface .botaoStart button:hover {
+    background-color: #EFD08A;
+}
+
+.interface .botaoStart button a:hover {
+    color: #000;
+}
